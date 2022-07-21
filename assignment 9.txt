@@ -1,0 +1,177 @@
+Ans=1
+int main()
+{
+    int i,j,n;
+
+        printf("\n\nEnter a Month Number ");
+        scanf("%d",&n);
+        switch(n)
+        {
+        case 1:
+            printf("31 Days"); break;
+        case 2:
+            printf("28/29 Days"); break;
+        case 3:
+            printf("31 Days"); break;
+        case 4:
+            printf("30 Days"); break;
+        case 5:
+            printf("31 Days"); break;
+        case 6:
+            printf("30 Days"); break;
+        case 7:
+            printf("31 Days"); break;
+        case 8:
+            printf("31 Days"); break;
+        case 9:
+            printf("30 Days"); break;
+        case 10:
+            printf("31 Days"); break;
+        case 11:
+            printf("30 Days"); break;
+        case 12:
+            printf("31 Days"); break;
+        default :
+            printf("Invalid Month");
+        }
+}
+
+Ans=2
+int main()
+{
+    int i,j,k;
+    while(1)
+    {
+        printf("\n1. Addition");
+        printf("\n2. Subtraction");
+        printf("\n3. Multiplication");
+        printf("\n4. Division");
+        printf("\n5. Exit");
+        printf("\n\nEnter your choice");
+        scanf("%d",&k);
+        switch(k)
+        {
+        case 1:
+            printf("Enter two Number ");
+            scanf("%d%d",&i,&j);
+            printf("Sum is %d ",i+j);
+            break;
+        case 2:
+            printf("Enter two Number ");
+            scanf("%d%d",&i,&j);
+            printf("Difference is %d",i-j);
+            break;
+        case 3:
+            printf("Enter two Number ");
+            scanf("%d%d",&i,&j);
+            printf("Product is %d ",i*j);
+            break;
+        case 4:
+            printf("Enter two Number ");
+            scanf("%d%d",&i,&j);
+            printf("Division is %d ",i/j);
+            break;
+        case 5:
+            exit(1);
+        default :
+            printf("Invalid Choice");
+
+        }
+    }
+}
+Ans=3
+int main()
+{
+    int i;
+    printf("Enter a Number from week");
+    scanf("%d",&i);
+    switch(i)
+    {
+    case 1:
+        printf("Monday");break;
+    case 2:
+        printf("Tuesday");break;
+    case 3:
+        printf("Wednesday"); break;
+    case 4:
+        printf("Thursday"); break;
+    case 5:
+        printf("Friday"); break;
+    case 6:
+        printf("Saturday"); break;
+    case 7:
+        printf("Sunday"); break;
+    default :
+        printf("Invalid Number");
+    }
+}
+
+If same write as it (System.out.println) it Error in C language because C compiler dont know this syntex 
+Ans=5
+int main()
+{
+    int var;
+    printf("Enter a Number ");
+    scanf("%d",&var);
+    switch(var)
+    {
+    case 1:
+        printf("good");break;
+    case 2:
+        printf("better"); break;
+    case 3:
+        printf("Best");break;
+    default :
+        printf("Invalid Number");
+    }
+}
+
+Ans=6
+int main()
+{
+    int i;
+    printf("\nEnter a number ");
+    scanf("%d",&i);
+    switch(i%100&&i%4&&i%400)
+    {
+
+            case 0:
+                printf("Leap Year");break;
+            case 1:
+                printf("Not Leap"); break;
+
+    }
+}
+
+Ans=8
+int main()
+{
+    int i;
+    char j;
+    printf("Enter a Sign - or +\n");
+    scanf("%c",&j);
+    printf("\nEnter a Number ");
+    scanf("%d",&i);
+    printf("\n%c%d \n",j,i);
+    switch (j)
+    {
+    case '+' :
+        printf("%d",-i);
+        break;
+    case '-' :
+        printf("%d",+i);
+        break;
+    }
+}
+
+Ans=9
+int main()
+{
+    int i;
+    printf("Enter a Number");
+    scanf("%d",&i);
+    if(i%2==0)
+    {
+      printf("%d",++i);
+    }
+}
